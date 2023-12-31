@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 ruby "3.0.6"
 
+# add guard-rspec for testing/monitoring
+gem "guard-rspec"
+
 # add rspec
 gem "rspec"
 
