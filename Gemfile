@@ -6,7 +6,7 @@ ruby "3.0.6"
 gem "guard-rspec"
 
 # add rspec
-gem "rspec"
+gem "rspec-rails"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.2"
