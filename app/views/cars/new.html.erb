@@ -1,0 +1,32 @@
+<h1>New Car</h1>
+
+<%= form_with model: @car do |form| %>
+
+<div>
+  <%= form.label :make %><br>
+  <%= form.text_field :make %>
+  <% @car.errors.full_messages_for(:make).each do |message| %>
+  <div><%= message %></div>
+    <% end %>
+  </div>
+
+<div>
+  <%= form.label :model %><br>
+  <%= form.text_field :model %>
+  <% @car.errors.full_messages_for(:model).each do |message| %>
+  <div><%= message %></div>
+    <% end %>
+  </div>
+
+<div>
+  <%= form.label :year %><br>
+  <%= form.text_field :year %>
+  <% @car.errors.full_messages_for(:year).each do |message| %>
+  <div><%= message %></div>
+    <% end %>
+  </div>
+
+<div>
+  <%= form.submit %>
+  </div>
+<% end %>
