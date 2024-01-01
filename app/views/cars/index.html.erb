@@ -1,2 +1,23 @@
-<h1>Cars#index</h1>
-<p>Find me in app/views/cars/index.html.erb</p>
+<h1>Cars</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Year</th>
+      </tr>
+    </thead>
+
+  <tbody>
+    <% @cars.each do |car| %>
+    <tr>
+      <td> <%= link_to car.make, car %></td>
+      <td> <%= car.model %></td>
+      <td> <%= car.year %></td>
+      </tr>
+    <% end %>
+    </tbody>
+</table>
+
+<%= button_to "New Car", { :action => "new" }, :method => :get %>
